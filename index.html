@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsan Rabari · Python Developer</title>
+  <meta name="description" content="Portfolio of Harsan Rabari — Python Developer specializing in Django, FastAPI, and building scalable web applications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NOISE OVERLAY ===== -->
+  <div class="noise"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="site-header" id="siteHeader" role="banner">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">
+        <span class="logo-mark">HR</span>
+      </a>
+      <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list" id="navList">
+          <li><a href="#about" class="nav-item"><span class="nav-label">About</span></a></li>
+          <li><a href="#skills" class="nav-item"><span class="nav-label">Skills</span></a></li>
+          <li><a href="#projects" class="nav-item"><span class="nav-label">Work</span></a></li>
+          <li><a href="#education" class="nav-item"><span class="nav-label">Education</span></a></li>
+          <li><a href="#contact" class="nav-item nav-cta">Let's Talk</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-shape"></div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              Open to Opportunities
+            </div>
+            <p class="hero-greeting">Hi, I'm</p>
+            <h1 class="hero-name">Harsan Rabari</h1>
+            <p class="hero-title">
+              <span class="typing" id="typingText"></span><span class="cursor">|</span>
+            </p>
+            <p class="hero-desc">
+              I build <strong>scalable web applications</strong> and automation solutions
+              with Django, FastAPI, and modern Python — turning complex problems into
+              clean, efficient code.
+            </p>
+            <div class="hero-buttons">
+              <a href="resume/Harsan_Rabari_Resume.pdf" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> View Resume
+              </a>
+              <a href="#projects" class="btn btn-outline">
+                <i class="fas fa-arrow-right"></i> See My Work
+              </a>
+            </div>
+            <div class="hero-socials">
+              <a href="https://github.com/Harsan-Rabari3701" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/sakirvekariya" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="mailto:vekariyasakir02@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              <a href="tel:+919316250854" aria-label="Phone"><i class="fas fa-phone"></i></a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-photo-frame">
+              <div class="hero-photo" id="heroPhoto">
+                <img src="Images/harsan.jpg" alt="Harsan Rabari" id="profileImg"
+                     onerror="this.style.display='none'; this.parentElement.classList.add('no-photo')" />
+              </div>
+            </div>
+            <div class="hero-frame-deco"></div>
+            <div class="hero-dot dot-1"></div>
+            <div class="hero-dot dot-2"></div>
+            <div class="hero-dot dot-3"></div>
+          </div>
+        </div>
+
+        <!-- Stats row -->
+        <!-- <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num" data-target="3">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Years Learning</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="2">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="6">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="100">0</span><span class="stat-pct">%</span>
+            <span class="stat-label">Dedication</span>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- ===== SECTION DIVIDER ===== -->
+    <div class="section-divider">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path d="M0,30 C360,60 720,0 1440,30 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">About</span>
+          <h2 class="section-title">A Bit <span class="italic">About Me</span></h2>
+        </div>
+        <div class="about-wrap reveal">
+          <div class="about-main">
+            <p class="about-text">
+              I'm a <strong>Python Developer</strong> with hands-on experience building
+              full-stack web applications using <strong>Django</strong> and <strong>FastAPI</strong>.
+              I thrive on turning ideas into clean, maintainable code — whether it's an
+              e-commerce platform or a high-performance REST API.
+            </p>
+            <p class="about-text">
+              Currently seeking an opportunity to contribute to a <strong>dynamic team</strong>
+              where I can solve real-world problems and keep leveling up my craft.
+              I believe great software is built at the intersection of curiosity,
+              discipline, and collaboration.
+            </p>
+            <div class="about-philosophy">
+              <span class="phil-mark">&ldquo;</span>
+              <p>Code is not just what I write — it's how I think, solve, and create.</p>
+            </div>
+          </div>
+          <div class="about-sidebar">
+            <div class="about-quick">
+              <div class="quick-item">
+                <span class="quick-icon"><i class="fas fa-graduation-cap"></i></span>
+                <span class="quick-info">
+                  <span class="quick-label">Degree</span>
+                  <span class="quick-value">BCA</span>
+                </span>
+              </div>
+              <div class="quick-item">
+                <span class="quick-icon"><i class="fas fa-map-pin"></i></span>
+                <span class="quick-info">
+                  <span class="quick-label">Location</span>
+                  <span class="quick-value">Himatnagar, Gujarat</span>
+                </span>
+              </div>
+              <div class="quick-item">
+                <span class="quick-icon"><i class="fas fa-code"></i></span>
+                <span class="quick-info">
+                  <span class="quick-label">Focus</span>
+                  <span class="quick-value">Backend &amp; Full-Stack</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION DIVIDER ===== -->
+    <div class="section-divider section-divider--flip">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path d="M0,30 C360,0 720,60 1440,30 L1440,0 L0,0 Z"></path>
+      </svg>
+    </div>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Toolkit</span>
+          <h2 class="section-title">What I <span class="italic">Work With</span></h2>
+          <p class="section-sub">The technologies I use daily to bring ideas to life.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <i class="fab fa-python"></i>
+              <h3>Languages &amp; Frameworks</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag"><i class="fab fa-python"></i> Python</span>
+              <span class="tag"><i class="fas fa-database"></i> Django</span>
+              <span class="tag tag-accent"><i class="fas fa-bolt"></i> FastAPI</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <i class="fas fa-palette"></i>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag"><i class="fab fa-html5"></i> HTML</span>
+              <span class="tag"><i class="fab fa-css3"></i> CSS</span>
+              <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <i class="fas fa-database"></i>
+              <h3>Databases</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag"><i class="fas fa-database"></i> SQLite</span>
+              <span class="tag"><i class="fas fa-database"></i> MySQL</span>
+              <!-- <span class="tag tag-accent"><i class="fas fa-leaf"></i> MongoDB</span> -->
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <i class="fas fa-tools"></i>
+              <h3>Tools &amp; Workflow</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag"><i class="fab fa-git-alt"></i> Git</span>
+              <span class="tag"><i class="fab fa-github"></i> GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION DIVIDER ===== -->
+    <div class="section-divider">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path d="M0,30 C360,60 720,0 1440,30 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Projects</span>
+          <h2 class="section-title">Things I've <span class="italic">Built</span></h2>
+          <p class="section-sub">Real projects with real problems solved.</p>
+        </div>
+        <div class="projects-list">
+          <article class="project-card reveal">
+            <div class="project-index">01</div>
+            <div class="project-content">
+              <div class="project-top">
+                <span class="project-badge">Full-Stack</span>
+                <h3 class="project-title">E-Commerce System</h3>
+              </div>
+              <p class="project-desc">
+                A complete e-commerce platform with product catalog management, shopping cart,
+                secure checkout flow, and user authentication — built with Django and optimized
+                for performance.
+              </p>
+              <ul class="project-points">
+                <li>Product catalog with search &amp; filtering</li>
+                <li>Shopping cart with session persistence</li>
+                <li>User auth, order tracking &amp; admin panel</li>
+                <li>Optimized ORM queries (select_related, prefetch_related)</li>
+              </ul>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Django</span>
+                <span>SQLite</span>
+                <span>Bootstrap</span>
+              </div>
+              <a href="https://github.com/Harsan-Rabari3701" target="_blank" rel="noopener" class="btn btn-small">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </article>
+
+          <!-- <article class="project-card reveal">
+            <div class="project-index">02</div>
+            <div class="project-content">
+              <div class="project-top">
+                <span class="project-badge badge-api">API</span>
+                <h3 class="project-title">FastAPI REST Service</h3>
+              </div>
+              <p class="project-desc">
+                A high-performance async REST API using FastAPI with Pydantic validation,
+                PostgreSQL integration via SQLAlchemy, and JWT-based authentication for
+                secure, scalable backend services.
+              </p>
+              <ul class="project-points">
+                <li>Async endpoints with asyncio patterns</li>
+                <li>Pydantic request/response validation</li>
+                <li>PostgreSQL with SQLAlchemy ORM</li>
+                <li>JWT authentication &amp; role-based access</li>
+              </ul>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>PostgreSQL</span>
+                <span>Pydantic</span>
+              </div>
+              <a href="https://github.com/sakirvekariya/fastapi-project" target="_blank" rel="noopener" class="btn btn-small">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </article> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION DIVIDER ===== -->
+    <div class="section-divider section-divider--flip">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path d="M0,30 C360,0 720,60 1440,30 L1440,0 L0,0 Z"></path>
+      </svg>
+    </div>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Education</span>
+          <h2 class="section-title">My <span class="italic">Journey</span></h2>
+        </div>
+        <div class="edu-timeline">
+          <div class="edu-line"></div>
+
+          <div class="edu-entry reveal">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <div class="edu-card-top">
+                <span class="edu-year">2023 — 2026</span>
+                <span class="edu-badge">Graduated</span>
+              </div>
+              <h3 class="edu-title">BCA — Computer Science</h3>
+              <p class="edu-inst">Hemchandracharya North Gujarat University (HNGU), Patan</p>
+              <div class="edu-footer">
+                <span class="edu-score">CGPA: 7.58</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-entry reveal">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <div class="edu-card-top">
+                <span class="edu-year">2021 — 2022</span>
+                <span class="edu-badge badge-hsc">HSC</span>
+              </div>
+              <h3 class="edu-title">Higher Secondary Certificate (HSC)</h3>
+              <p class="edu-inst">Shree M.M. Patel High School,Nikoda</p>
+              <div class="edu-footer">
+                <span class="edu-score">Percentage: 66%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION DIVIDER ===== -->
+    <div class="section-divider">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path d="M0,30 C360,60 720,0 1440,30 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">Let's <span class="italic">Work Together</span></h2>
+          <p class="section-sub">Have a project in mind? I'd love to hear about it.</p>
+        </div>
+        <div class="contact-wrap">
+          <div class="contact-channels reveal">
+            <a href="mailto:harsanrabari75@gmail.com" class="channel">
+              <span class="channel-icon"><i class="fas fa-envelope"></i></span>
+              <span class="channel-body">
+                <span class="channel-meta">Email</span>
+                <span class="channel-value">harsanrabari75@gmail.com</span>
+              </span>
+            </a>
+            <a href="tel:+919016868172" class="channel">
+              <span class="channel-icon"><i class="fas fa-phone"></i></span>
+              <span class="channel-body">
+                <span class="channel-meta">Phone</span>
+                <span class="channel-value">+91 90168 68172</span>
+              </span>
+            </a>
+            <a href="https://www.linkedin.com/in/harsan-rabari-4b6821375?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="channel">
+              <span class="channel-icon"><i class="fab fa-linkedin-in"></i></span>
+              <span class="channel-body">
+                <span class="channel-meta">LinkedIn</span>
+                <span class="channel-value">@harsanrabari</span>
+              </span>
+            </a>
+            <a href="https://github.com/Harsan-Rabari3701" target="_blank" rel="noopener" class="channel">
+              <span class="channel-icon"><i class="fab fa-github"></i></span>
+              <span class="channel-body">
+                <span class="channel-meta">GitHub</span>
+                <span class="channel-value">@harsanrabari</span>
+              </span>
+            </a>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="sr-only">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email" class="sr-only">Your Email</label>
+                <input type="email" id="cf-email" name="email" placeholder="Your email" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="sr-only">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label for="message" class="sr-only">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, idea, or just say hello..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <span class="btn-text">Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-mark">HR</span>
+          <p class="footer-tagline">Python Developer · Django &amp; FastAPI</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Work</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/Harsan-Rabari3701" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/harsan-rabari-4b6821375?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:harsanrabari75@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="tel:+919016868172" aria-label="Phone"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Harsan Rabari. Designed &amp; built with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
